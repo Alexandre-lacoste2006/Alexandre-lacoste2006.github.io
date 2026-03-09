@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille Techno - Mon Portfolio</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; padding: 0; 
+      background: #ffffff; 
+      color: #222;
+    }
+    header {
+      background: #0d6efd; 
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #e9ecef;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+      z-index: 1000;
+    }
+    nav a {
+      color: #0d6efd;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 50px;
+      max-width: 1000px;
+      margin: 100px auto 50px;
+      text-align: left;
+    }
+    .veille-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .veille-card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background: #0d6efd;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    h2 {
+      color: #0d6efd;
+      margin-bottom: 20px;
+    }
+    a.link-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #0d6efd;
+      border-radius: 5px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    a.link-button:hover {
+      background-color: #084298;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ma Veille Technologique</h1>
+    <p>Voici les sujets que je surveille dans le domaine de la technologie</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="stages.html">Stages</a>
+    <a href="projets.html">Projets</a>
+    <a href="veille.html">Veille Techno</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <div class="veille-card">
+      <h2>Sujet 1 : L'IA dans le monde automobile</h2>
+      <p>J'ai trouvé quelques informations intéressantes sur ce sujet.</p>
+      <a class="link-button" href="https://gitlab.com/lacoste3/LACOSTE/-/blob/main/VeilleTechno.md" target="_blank">Voir ma veille sur GitLab</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 - Mon Portfolio
+  </footer>
+</body>
+</html>
