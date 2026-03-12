@@ -4,24 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stages - Mon Portfolio</title>
+
   <style>
+
     body { 
       font-family: Arial, sans-serif; 
-      margin: 0; padding: 0; 
-      background: #ffffff; 
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
       color: #222;
     }
+
     header {
       background: #0d6efd; 
       color: #fff;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
+
     nav {
       position: fixed;
       top: 0;
       width: 100%;
-      background: #e9ecef;
+      background: white;
       display: flex;
       justify-content: center;
       gap: 25px;
@@ -29,63 +34,72 @@
       border-bottom: 1px solid #ddd;
       z-index: 1000;
     }
+
     nav a {
       color: #0d6efd;
       text-decoration: none;
       font-weight: bold;
       transition: 0.2s ease;
     }
+
     nav a:hover {
-      text-decoration: underline;
+      color: #084298;
     }
+
     section {
       padding: 50px;
       max-width: 1000px;
-      margin: 100px auto 50px;
-      text-align: left;
+      margin: 120px auto 50px;
     }
+
+    h2 {
+      color: #0d6efd;
+      margin-bottom: 10px;
+    }
+
     .stage-card {
-      border: 1px solid #ddd;
+      background: white;
       border-radius: 10px;
-      padding: 20px;
+      padding: 25px;
       margin-bottom: 30px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
     }
+
     .stage-card:hover {
       transform: translateY(-5px);
     }
+
+    .pdf-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background-color: #0d6efd;
+      border-radius: 6px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .pdf-button:hover {
+      background-color: #084298;
+      transform: scale(1.05);
+    }
+
     footer {
       background: #0d6efd;
       color: #fff;
       text-align: center;
       padding: 20px;
+      margin-top: 60px;
     }
-    h2 {
-      color: #0d6efd;
-      margin-bottom: 20px;
-    }
-    .pdf-button {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #0d6efd;
-      border-radius: 5px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-    .pdf-button:hover {
-      background-color: #084298;
-    }
+
   </style>
+
 </head>
+
 <body>
-  <header>
-    <h1>Mes Stages</h1>
-    <p>Voici une liste des stages que j'ai effectués</p>
-  </header>
 
   <nav>
     <a href="index.html">Accueil</a>
@@ -95,22 +109,49 @@
     <a href="contact.html">Contact</a>
   </nav>
 
+  <header>
+    <h1>Mes Stages</h1>
+    <p>Voici les stages que j'ai réalisés durant mon BTS SIO</p>
+  </header>
+
   <section>
+
     <div class="stage-card">
-      <h2>Stage 1 : SIAAP (Syndicat Interdépartemental pour l'assainissement de l'agglomération parisienne)</h2>
-      <p>6 semaines du 19/05/2025 au 28/06/2025 sur le site Seine Centre. Montage d'une plateforme Proxmox sur deux nœuds pour des recours d'urgence en cas de problème sur le site ou un autre site.</p>
-      <a class="pdf-button" href="https://gitlab.com/lacoste3/LACOSTE/-/blob/main/Stage/CRA_Stage.md" target="_blank">Voir le compte rendu sur GitLab</a>
+      <h2>Stage 1 — SIAAP</h2>
+      <p>
+        Stage de 6 semaines du 19/05/2025 au 28/06/2025 sur le site Seine Centre.
+        Mise en place d'une plateforme Proxmox sur deux nœuds pour permettre
+        une solution de secours en cas de problème sur un site.
+      </p>
+
+      <a class="pdf-button"
+      href="https://gitlab.com/lacoste3/LACOSTE/-/blob/main/Stage/CRA_Stage.md"
+      target="_blank">
+      Voir le compte rendu
+      </a>
     </div>
 
     <div class="stage-card">
-      <h2>Stage 2 : SIAAP (Syndicat Interdépartemental pour l'assainissement de l'agglomération parisienne)</h2>
-      <p>6 seamines du 05/01/2026 au 14/02/2026 sur le site Seine Aval. Suivre une procédure d'intervention, surveiller des pc, des switch sur le logiciel "Nagios" et aussi sur "glpi" et aussi sur le terrain sur les problème d'adresse ip.</p>
-      <a class="pdf-button" href="https://gitlab.com/lacoste3/LACOSTE/-/blob/main/Stage/CRA_STAGE2.md?ref_type=heads" target="_blank">Voir le compte rendu sur GitLab</a>
+      <h2>Stage 2 — SIAAP</h2>
+      <p>
+        Stage de 6 semaines du 05/01/2026 au 14/02/2026 sur le site Seine Aval.
+        Surveillance des PC et switchs avec les outils Nagios et GLPI.
+        Intervention sur des problèmes d'adresses IP et suivi des procédures
+        d'intervention réseau.
+      </p>
+
+      <a class="pdf-button"
+      href="https://gitlab.com/lacoste3/LACOSTE/-/blob/main/Stage/CRA_STAGE2.md?ref_type=heads"
+      target="_blank">
+      Voir le compte rendu
+      </a>
     </div>
+
   </section>
 
   <footer>
-    © 2025 - Mon Portfolio
+    © 2025 - Alexandre Lacoste
   </footer>
+
 </body>
 </html>

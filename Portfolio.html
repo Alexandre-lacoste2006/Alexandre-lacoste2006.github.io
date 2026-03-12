@@ -4,24 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+
   <style>
+
     body { 
       font-family: Arial, sans-serif; 
-      margin: 0; padding: 0; 
-      background: #ffffff; 
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa; /* fond gris clair plus professionnel */
       color: #222;
     }
+
     header {
       background: #0d6efd; 
       color: #fff;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
+
     nav {
       position: fixed;
       top: 0;
       width: 100%;
-      background: #e9ecef;
+      background: white;
       display: flex;
       justify-content: center;
       gap: 25px;
@@ -29,48 +34,55 @@
       border-bottom: 1px solid #ddd;
       z-index: 1000;
     }
+
     nav a {
       color: #0d6efd;
       text-decoration: none;
       font-weight: bold;
       transition: 0.2s ease;
     }
+
     nav a:hover {
-      text-decoration: underline;
+      color: #084298;
     }
+
     section {
       padding: 50px;
       max-width: 1000px;
-      margin: 100px auto 50px;
+      margin: 120px auto 50px;
       text-align: center;
     }
+
     .button {
       display: inline-block;
       margin-top: 20px;
-      padding: 10px 20px;
+      padding: 12px 25px;
       background-color: #0d6efd;
       color: #fff;
-      border-radius: 5px;
+      border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      transition: background-color 0.3s ease;
+      transition: 0.3s;
     }
+
     .button:hover {
       background-color: #084298;
+      transform: scale(1.05);
     }
+
     footer {
       background: #0d6efd;
       color: #fff;
       text-align: center;
       padding: 20px;
+      margin-top: 80px;
     }
+
   </style>
+
 </head>
+
 <body>
-  <header>
-    <h1>Mon Portfolio</h1>
-    <p>Découvrez mes projets et réalisations</p>
-  </header>
 
   <nav>
     <a href="index.html">Accueil</a>
@@ -80,14 +92,24 @@
     <a href="contact.html">Contact</a>
   </nav>
 
+  <header>
+    <h1>Mon Portfolio</h1>
+    <p>Découvrez mes projets et réalisations</p>
+  </header>
+
   <section>
     <h2>Bienvenue sur mon Portfolio</h2>
     <p>Vous pouvez découvrir mes compétences et réalisations ici.</p>
-    <a class="button" href="index.html#presentation">En savoir plus</a>
+
+    <a class="button" href="index.html#presentation">
+      En savoir plus
+    </a>
+
   </section>
 
   <footer>
-    © 2025 - Mon Portfolio
+    © 2025 - Alexandre Lacoste
   </footer>
+
 </body>
 </html>
